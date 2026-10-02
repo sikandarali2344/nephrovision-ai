@@ -1,14 +1,27 @@
-# Backend
+﻿# Environment
+.env
+.env.local
+
+# Python
 venv/
 __pycache__/
 *.pyc
-*.db
-.env
-backend/models/*.pkl
-backend/models/*.h5
-backend/ml/data/*.csv
+*.pkl
+model_metadata.json
 
-# Frontend
+# Node
 node_modules/
 dist/
+.vite/
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
+Thumbs.db
