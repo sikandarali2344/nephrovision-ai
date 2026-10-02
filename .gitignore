@@ -1,0 +1,14 @@
+# Backend
+venv/
+__pycache__/
+*.pyc
+*.db
+.env
+backend/models/*.pkl
+backend/models/*.h5
+backend/ml/data/*.csv
+
+# Frontend
+node_modules/
+dist/
+.DS_Store

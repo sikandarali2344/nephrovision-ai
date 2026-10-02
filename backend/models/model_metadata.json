@@ -1,0 +1,149 @@
+{
+  "best_model": "logistic_regression",
+  "all_results": {
+    "random_forest": {
+      "accuracy": 0.768,
+      "precision": 0.409,
+      "recall": 0.4752,
+      "f1": 0.4396,
+      "roc_auc": 0.7431,
+      "confusion_matrix": [
+        [
+          2708,
+          526
+        ],
+        [
+          402,
+          364
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "accuracy": 0.6817,
+      "precision": 0.3382,
+      "recall": 0.6919,
+      "f1": 0.4544,
+      "roc_auc": 0.7547,
+      "confusion_matrix": [
+        [
+          2197,
+          1037
+        ],
+        [
+          236,
+          530
+        ]
+      ]
+    },
+    "xgboost": {
+      "accuracy": 0.8085,
+      "precision": 0.5,
+      "recall": 0.1527,
+      "f1": 0.234,
+      "roc_auc": 0.72,
+      "confusion_matrix": [
+        [
+          3117,
+          117
+        ],
+        [
+          649,
+          117
+        ]
+      ]
+    }
+  },
+  "feature_columns": [
+    "Age",
+    "BMI",
+    "Systolic_BP",
+    "Diastolic_BP",
+    "eGFR",
+    "Serum_Creatinine",
+    "Blood_Urea_Nitrogen",
+    "Urine_ACR",
+    "HbA1c",
+    "Fasting_Glucose",
+    "Exercise_Hours_Per_Week",
+    "Sleep_Duration_Hours",
+    "Heart_Rate",
+    "Albumin",
+    "MAP",
+    "Age_eGFR_interaction",
+    "Risk_Ratio",
+    "Sex",
+    "Diabetes",
+    "Hypertension",
+    "Cardiovascular_Disease",
+    "Family_History",
+    "Smoking_Status",
+    "eGFR_category"
+  ],
+  "numeric_features": [
+    "Age",
+    "BMI",
+    "Systolic_BP",
+    "Diastolic_BP",
+    "eGFR",
+    "Serum_Creatinine",
+    "Blood_Urea_Nitrogen",
+    "Urine_ACR",
+    "HbA1c",
+    "Fasting_Glucose",
+    "Exercise_Hours_Per_Week",
+    "Sleep_Duration_Hours",
+    "Heart_Rate",
+    "Albumin",
+    "MAP",
+    "Age_eGFR_interaction",
+    "Risk_Ratio"
+  ],
+  "categorical_features": [
+    "Sex",
+    "Diabetes",
+    "Hypertension",
+    "Cardiovascular_Disease",
+    "Family_History",
+    "Smoking_Status",
+    "eGFR_category"
+  ],
+  "transformed_feature_names": [
+    "num__Age",
+    "num__BMI",
+    "num__Systolic_BP",
+    "num__Diastolic_BP",
+    "num__eGFR",
+    "num__Serum_Creatinine",
+    "num__Blood_Urea_Nitrogen",
+    "num__Urine_ACR",
+    "num__HbA1c",
+    "num__Fasting_Glucose",
+    "num__Exercise_Hours_Per_Week",
+    "num__Sleep_Duration_Hours",
+    "num__Heart_Rate",
+    "num__Albumin",
+    "num__MAP",
+    "num__Age_eGFR_interaction",
+    "num__Risk_Ratio",
+    "cat__Sex_Female",
+    "cat__Sex_Male",
+    "cat__Diabetes_No",
+    "cat__Diabetes_Yes",
+    "cat__Hypertension_No",
+    "cat__Hypertension_Yes",
+    "cat__Cardiovascular_Disease_No",
+    "cat__Cardiovascular_Disease_Yes",
+    "cat__Family_History_No",
+    "cat__Family_History_Yes",
+    "cat__Smoking_Status_Current",
+    "cat__Smoking_Status_Former",
+    "cat__Smoking_Status_Never",
+    "cat__eGFR_category_G1_Normal",
+    "cat__eGFR_category_G2_Mild",
+    "cat__eGFR_category_G3_Moderate"
+  ],
+  "trained_on_rows": 20000,
+  "used_real_dataset": false,
+  "shap_available": true,
+  "trained_at": "2026-10-02T05:52:58.660404Z"
+}
